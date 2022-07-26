@@ -12,7 +12,7 @@ const process = {
 }
 const project = {
     src: {
-        sass: "src/scss/**/*.scss",
+        sass: "src/sass/**/*.scss",
         css: "src/css/**/*.css",
         js: "src/js/**/*.js",
         img: "src/img/**/*.+(png|jpg)",
