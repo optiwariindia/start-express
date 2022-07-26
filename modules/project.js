@@ -1,4 +1,5 @@
 const fs=require("fs")
+const run=require("child_process").execSync;
 const srcdir=__dirname;
 module.exports={
     name:"",
@@ -54,7 +55,7 @@ module.exports={
             dest:"gulpfile.js"
         },
         {
-            src:"files/.gitignore",
+            src:"files/git.ignore",
             dest:".gitignore"
         },
         {
@@ -101,5 +102,6 @@ module.exports={
         this.files.forEach(file=>{
             fs.copyFileSync(`${srcdir}/${file.src}`,`${this.name}/${file.dest}`)
         })
+        run(`npm install`,{cwd:this.name})
     }
 }
