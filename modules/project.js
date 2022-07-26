@@ -68,12 +68,8 @@ module.exports={
         },
         {
             src:"templates/server.js",
-            dest:`app/${this.name}.js`
+            dest:`app/server.js`
         },
-    ],
-    templates:[
-        "server.js",
-        "index.twig"
     ],
     create:function(){
         this.dirs.forEach(dir => {
@@ -83,10 +79,10 @@ module.exports={
             name:this.name,
             version:"1.0.0",
             description:"",
-            main:`app/${this.name}.js`,
+            main:`app/server.js`,
             scripts:{
-                devstart:`nodemon app/${this.name}.js`,
-                start:`node app/${this.name}.js`,
+                devstart:`nodemon app/server.js`,
+                start:`node app/server.js`,
                 watch:`gulp watch`,
             },
             dependencies:{ },
