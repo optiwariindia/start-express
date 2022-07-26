@@ -1,4 +1,5 @@
 const fs=require("fs")
+const srcdir=__dirname;
 module.exports={
     name:"",
     dirs:[
@@ -74,6 +75,8 @@ module.exports={
         "index.twig"
     ],
     create:function(){
+        console.log(srcdir);
+        return;
         this.dirs.forEach(dir => {
             fs.mkdirSync(`${this.name}/${dir}`, { recursive: true });
         })
