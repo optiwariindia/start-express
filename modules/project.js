@@ -68,7 +68,7 @@ module.exports={
         },
         {
             src:"templates/server.js",
-            dest:`app/${module.exports.name}.js`
+            dest:`app/${this.name}.js`
         },
     ],
     templates:[

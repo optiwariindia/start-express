@@ -35,5 +35,6 @@
 8. To minify js/css/ and compile sass files you can run command below in your project directory:
         
     ```npm run watch```
+9. The code to connect mongodb using mongoose library is also been added with this project. You can set environment variable named MONGODB to connect to your mongodb server, alternatively it gets connected with http://localhost:27017/database by default. You can comment line no. 16 if you don't want to connect to mongodb.
     
 This will automatically build your scripts and styles and reload your application in realtime while in devleopment mode.
