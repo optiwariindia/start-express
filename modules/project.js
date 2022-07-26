@@ -75,8 +75,6 @@ module.exports={
         "index.twig"
     ],
     create:function(){
-        console.log(srcdir);
-        return;
         this.dirs.forEach(dir => {
             fs.mkdirSync(`${this.name}/${dir}`, { recursive: true });
         })
@@ -101,7 +99,7 @@ module.exports={
         })
         fs.writeFileSync(`${this.name}/package.json`, JSON.stringify(package, null, 2))
         this.files.forEach(file=>{
-            fs.copyFileSync(`modules/${file.src}`,`${this.name}/${file.dest}`)
+            fs.copyFileSync(`${srcdir}/${file.src}`,`${this.name}/${file.dest}`)
         })
     }
 }
