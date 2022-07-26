@@ -1,0 +1,9 @@
+{
+  "name": "@optiwariindia/start-express",
+  "version": "0.0.3",
+  "bin": "./bin.js",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "yargs": "^17.5.1"
+  }
+}
