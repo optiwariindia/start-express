@@ -1,6 +1,6 @@
 {
   "name": "start-express",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "bin": "./bin.js",
   "dependencies": {
     "yargs": "^17.5.1"

@@ -3,7 +3,6 @@ const yargs = require("yargs")(process.argv);
 const { exec } = require('child_process');
 const { promisify } = require('util');
 const execPromise = promisify(exec);
-const chalk =require("chalk");
 let project = require("./modules/project.js");
 
 (()=>{
