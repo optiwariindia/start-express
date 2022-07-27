@@ -1,14 +1,13 @@
 {
   "name": "start-express",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "bin": "./bin.js",
   "dependencies": {
-    "chalk": "^5.0.1",
     "yargs": "^17.5.1"
   },
   "description": "A simple script to generate a web application based on express",
-  "scripts":{
-    "prepare-and-publish":"git add .; git commit ; git push origin master ;npm publish "
+  "scripts": {
+    "prepare-and-publish": "git add .; git commit ; git push origin master ;npm publish "
   },
   "keywords": [
     "express",
@@ -19,13 +18,13 @@
     "setup",
     "boilerplate",
     "starter"
-  ],   
+  ],
   "license": "mit",
   "author": {
     "name": "Om Prakash Tiwari",
     "email": "optiwari.india@gmail.com",
     "url": "https://about.me/omtiwari"
-    },
+  },
   "contributors": [
     {
       "name": "Om Prakash Tiwari",
@@ -33,7 +32,7 @@
       "url": "https://about.me/omtiwari"
     }
   ],
-  "bugs":{
-    "email":"bugs@etutorials.co.in"
+  "bugs": {
+    "email": "bugs@etutorials.co.in"
   }
 }

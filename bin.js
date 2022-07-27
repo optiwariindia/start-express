@@ -3,6 +3,7 @@ const yargs = require("yargs")(process.argv);
 const { exec } = require('child_process');
 const { promisify } = require('util');
 const execPromise = promisify(exec);
+const chalk =require("chalk");
 let project = require("./modules/project.js");
 
 (()=>{
@@ -12,7 +13,7 @@ let project = require("./modules/project.js");
     })
 
     if(yargs.argv.project){
-        read.write("Creating project "+yargs.argv.project+"...\n");
+        console.info("Creating project "+yargs.argv.project+"...\n");
         project.name = yargs.argv.project;
         project.create();
         read.close();

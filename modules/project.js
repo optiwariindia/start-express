@@ -51,6 +51,10 @@ module.exports={
     ],
     files:[
         {
+            src:"files/nodemon.json",
+            dest:"nodemon.json"
+        },
+        {
             src:"files/gulpfile.js",
             dest:"gulpfile.js"
         },
@@ -81,7 +85,7 @@ module.exports={
             description:"",
             main:`app/server.js`,
             scripts:{
-                devstart:`nodemon app/server.js`,
+                devstart:`nodemon app/server.js --dev`,
                 start:`node app/server.js`,
                 watch:`gulp watch`,
             },
@@ -98,6 +102,9 @@ module.exports={
         this.files.forEach(file=>{
             fs.copyFileSync(`${srcdir}/${file.src}`,`${this.name}/${file.dest}`)
         })
+        console.info(`Project ${this.name} created!`)
+        console.log("Installing dependencies...")
         run(`npm install`,{cwd:this.name})
+        console.log("Express server is ready to use. use cd "+this.name+" to enter the project directory and npm run devstart to start the server. Go through the README.md file for more info.\n\n")
     }
 }

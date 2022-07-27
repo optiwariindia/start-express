@@ -6,11 +6,7 @@ To start the project, you need to run the following command:
 
 ```npx @optiwariindia/start-express```
 
-This will generate new project in the current directory and add essential files to the project. After execution of this command switch to your project using cd command and then execute the following command:
-
-```npm install```
-
-This will install essential pakcages for the project. You can now open the project in the editor of your choice and start coding.
+This will generate new project in the current directory and add essential files to the project. 
 
 ## Starting the server
 ### In development mode

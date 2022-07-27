@@ -1,0 +1,4 @@
+{
+    "ext":"js,json,twig",
+    "ignore":["node_modules","public","src"]
+}
